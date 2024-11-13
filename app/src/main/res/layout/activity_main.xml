@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/sf_pro_text_heavy"
+        android:text="@string/memory_game"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_29sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/sf_pro_text_heavy"
+        android:text="@string/_0"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_46sdp"
+        app:drawableStartCompat="@drawable/ic_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/panel1"
+        android:background="@drawable/btn_state"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@id/panel2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvScore"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:id="@+id/panel2"
+        android:background="@drawable/btn_state"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/panel1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvScore"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/panel3"
+        android:background="@drawable/btn_state"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/panel4"
+        app:layout_constraintTop_toBottomOf="@id/panel1"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:id="@+id/panel4"
+        android:background="@drawable/btn_state"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/panel3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/panel2"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
